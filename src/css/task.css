@@ -1,0 +1,101 @@
+.table {
+  width: 300px;
+  border:1px double #868686;
+  border-radius: 5px;
+}
+td, th {
+  border:1px double #868686;
+
+  padding: 5px 20px 5px 20px;
+}
+
+.note {
+  width: 290px;
+  height: 150px;
+  border: 1px double #c7c7c7;
+  border-radius: 5px;
+  padding: 5px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  background-color: white;
+}
+h3 {
+  display: inline;
+}
+
+input{
+  display: block;
+  width:96%;
+  border-radius: 5px;
+}
+
+.butSave{
+  margin-top: 10px;
+}
+p{
+  margin: 3px;
+}
+.er{
+  color: red;
+  font-size: small ;
+}
+.plus {
+  position: absolute;
+  left: 280px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  opacity: 0.3;
+  background-color: white;
+}
+.plus:hover {
+  opacity: 1;
+}
+.plus:before, .plus:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 13px;
+  width: 2px;
+  background-color: #333;
+}
+.plus:before {
+  transform: rotate(90deg);
+}
+.plus:after {
+  transform: rotate(-0deg);
+}
+
+.butDel {
+  position: relative;
+  /* left: 280px; */
+  top: 4px;
+  width: 22px;
+  height: 22px;
+  opacity: 0.3;
+  background-color: white;
+  cursor: pointer;
+}
+.butDel:hover {
+  opacity: 1;
+}
+.butDel:before, .butDel:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 13px;
+  width: 2px;
+  background-color: #333;
+}
+
+.butDel:before {
+  transform: rotate(45deg);
+}
+.butDel:after {
+  transform: rotate(-45deg);
+}
+
+.butEd {
+  cursor: pointer;
+}
