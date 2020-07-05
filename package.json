@@ -1,19 +1,20 @@
 {
-  "name": "simpleG",
+  "name": "CRM",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "coverage": "jest --coverage",
+    "test": "jest --testPathPattern=./src/", 
+    "coverage": "jest --testPathPattern=./src/ --coverage", 
+    "e2e": "jest --testPathPattern=./e2e/",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "author": "coursar",
+  "author": "GK",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -31,6 +32,7 @@
     "jest": "^25.1.0",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.9.0",
+    "puppeteer": "^5.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.3"
@@ -40,11 +42,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiselevgleb/simpleG.git"
+    "url": "git+https://github.com/kiselevgleb/CRM-template.git"
   },
   "bugs": {
-    "url": "https://github.com/kiselevgleb/simpleG/issues"
+    "url": "https://github.com/kiselevgleb/CRM-template/issues"
   },
-  "homepage": "https://github.com/kiselevgleb/simpleG#readme",
+  "homepage": "https://github.com/kiselevgleb/CRM-template#readme",
   "description": ""
 }
