@@ -22,11 +22,15 @@ describe('test card', () => {
       await page.goto(baseUrl);
       const pageTab = await page.$('[data-id=div]');
       const del = await pageTab.$('[data-id=del]');
-      await page.screenshot({path: '9000.png'});
+      await page.screenshot({
+        path: '9000.png'
+      });
       del.click();
       await page.waitFor(1000);
-      await page.screenshot({path: 'after9000.png'});
+      await page.screenshot({
+        path: 'after9000.png'
+      });
     });
   });
-  
+
 });
