@@ -23,14 +23,13 @@ describe('test card', () => {
       const pageTab = await page.$('[data-id=div]');
       const del = await pageTab.$('[data-id=del]');
       await page.screenshot({
-        path: '9000.png'
+        path: '9000.png',
       });
       del.click();
       await page.waitFor(1000);
       await page.screenshot({
-        path: 'after9000.png'
+        path: 'after9000.png',
       });
     });
   });
-
 });
